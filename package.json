@@ -1,0 +1,37 @@
+{
+  "name": "netee",
+  "version": "0.0.1",
+  "description": "tee(1) for network traffic. duplicate traffic to two different sources, reply from one",
+  "license": "MIT",
+  "author": {
+    "name": "Yaniv Kessler",
+    "email": "yanivk@gmail.com"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.js"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "debug": "^2.6.8",
+    "lodash": "^4.17.4",
+    "tee": "^0.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "~3.4.2",
+    "simply-wait": "^1.0.3"
+  },
+  "keywords": [
+    "net",
+    "network",
+    "proxy",
+    "tee"
+  ],
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=2.0.0"
+  },
+  "repository": "kessler/netee",
+  "bugs": "https://github.com/kessler/netee/issues",
+  "homepage": "https://github.com/kessler/netee"
+}
