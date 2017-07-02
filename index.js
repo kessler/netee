@@ -6,11 +6,12 @@ const debug = require('debug')('netee')
 const async = require('async')
 
 class Netee {
-	constructor(port, options) {
+
+	constructor(port, deliveryStrategy, replyStrategy, endpointOptions) {
 		debug('Ctor() %d', port)
 		this._port = port
 		this._activeConnections = new Set()
-		this._server = createServer(options, (connection) => {
+		this._server = createServer(endpointOptions, (connection) => {
 			this._onConnection(connection)
 		})
 
