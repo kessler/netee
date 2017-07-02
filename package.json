@@ -1,7 +1,7 @@
 {
   "name": "netee",
   "version": "0.0.1",
-  "description": "tee(1) for network traffic. duplicate traffic to two different sources, reply from one",
+  "description": "tee(1) for network traffic. duplicate traffic to several backends, reply from one",
   "license": "MIT",
   "author": {
     "name": "Yaniv Kessler",
